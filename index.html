@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nodus QR</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body>
+
+    <section class="cont">
+            <div class="logo">
+                <img id="logo" src="/img/logo.png" alt="">
+            </div>
+            <div>
+                <div class="card cont">
+                    <div class="card-image">
+                        <div class="qrdefault">
+                            <img id= 'qrcode' src="/img/qrdefault.png" alt="Placeholder image">
+                        </div>
+                    </div>
+                  </div>
+
+            </div>
+
+            <button class="button is-success" id ="regisrterbtn">Registrate</button>
+
+            <div class="modal " id="registermodal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title">Registro</p>
+                    <button class="delete" id='closebtn' aria-label="close"></button>
+                  </header>
+                  <section class="modal-card-body" >
+                    
+
+                    <div class="field" id="loader">
+                      <div class="field">
+                        <label class="label">Nombre</label>
+                        <div class="control">
+                          <input class="input"id='name' type="text" placeholder="Nombre">
+                        </div>
+                      </div>
+                      
+                      <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control">
+                          <input class="input" type="email" id="email" placeholder="Email">
+                        </div>
+                      </div>
+  
+                      <div class="field">
+                        <label class="label">Fecha de reservacion</label>
+                        <div class="control">
+                          <input class="input" id = "fechaR" type="date" placeholder="e.g. alexsmith@gmail.com">
+                        </div>
+                      </div>
+  
+                      <div class="field">
+                        <label class="label">Hora de reservacion</label>
+                        <div class="control">
+                          <input class="input" id="HoraS" type="time" placeholder="e.g. alexsmith@gmail.com">
+                        </div>
+                      </div>
+  
+                      <div class="field">
+                        <label class="label">Servicio</label>
+                        <div class="control">
+                          <div class="select">
+                            <select id = "Serv">
+                              <option>Selecciona un Servicio</option>
+                              <option>Servicio A</option>
+                              <option>Servicio B</option>
+                              <option>Servicio C</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+
+
+
+                    <div>
+                      <label class="label">Total:</label>
+                      <h1 class="totals">
+                          $<span  id = "Total" >0.00</span>
+                      </h1>
+                    </div>
+                  </section>
+
+                  <footer class="modal-card-foot">
+                    <button class="button is-success" id='pagarbtn'>Pagar</button>
+                    <button class="button" id='cancelbtn'>Cancel</button>
+                  </footer>
+
+
+
+                </div>
+
+
+
+              </div>
+              
+            
+        
+
+        
+    </section>
+
+          
+            
+
+
+        </div>
+    </section>
+</body>
+
+<script src= "app.js"></script>
+
+</html>
